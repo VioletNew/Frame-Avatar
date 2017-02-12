@@ -7,7 +7,7 @@ $(document).ready(function () {
     var preview = $('.preview-image');
     var scaleX = 1;
     var scaleY = 1;
-    var output_size = 500; // px
+    var output_size = 620; // px
     var output_name = 'avatar.png';
 
     $('.btn').addClass('hidden');
@@ -38,6 +38,7 @@ $(document).ready(function () {
         cropBoxResizable: false,
         autoCrop: false,
         minCropBoxWidth: output_size,
+        toggleDragModeOnDblclick: false,
     });
 
     $('.btn-upload').click(function () {
