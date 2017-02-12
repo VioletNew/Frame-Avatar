@@ -24,23 +24,25 @@
 <div class="container main-content">
     <div class="row">
         <div class="col-md-8">
-            <div class="frame-image"></div>
-            <div class="crop-image">
-                <img class="preview-image" src="http://placehold.it/500x500" alt="Preview image">
-                <input type="file" class="hidden" name="upload-file" id="upload-file" accept="image/*">
+            <div class="dyn-box">
+                <div class="frame-image"></div>
+                <div class="crop-image">
+                    <img class="preview-image" src="http://placehold.it/500x500" alt="Preview image">
+                    <input type="file" class="hidden" name="upload-file" id="upload-file" accept="image/*">
+                </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="crop-tool">
                 <button type="button" class="btn btn-primary btn-upload"><i class="fa fa-upload"></i> Tải lên</button>
-                <button type="button" class="btn btn-rotate-left"><i class="fa fa-undo"></i></button>
-                <button type="button" class="btn btn-rotate-right"><i class="fa fa-repeat"></i></button>
-                <button type="button" class="btn btn-zoom-in"><i class="fa fa-search-plus"></i></button>
-                <button type="button" class="btn btn-zoom-out"><i class="fa fa-search-minus"></i></button>
-                <button type="button" class="btn btn-flip-horizon"><i class="fa fa-arrows-h"></i></button>
-                <button type="button" class="btn btn-flip-vertical"><i class="fa fa-arrows-v"></i></button>
-                <button type="button" class="btn btn-reset"><i class="fa fa-refresh"> Làm lại</i></button>
-                <button type="button" class="btn btn-success btn-download"><i class="fa fa-download"></i> Tải xuống</button>
+                <button type="button" class="btn btn-rotate-left hidden"><i class="fa fa-undo"></i></button>
+                <button type="button" class="btn btn-rotate-right hidden"><i class="fa fa-repeat"></i></button>
+                <button type="button" class="btn btn-zoom-in hidden"><i class="fa fa-search-plus"></i></button>
+                <button type="button" class="btn btn-zoom-out hidden"><i class="fa fa-search-minus"></i></button>
+                <button type="button" class="btn btn-flip-horizon hidden"><i class="fa fa-arrows-h"></i></button>
+                <button type="button" class="btn btn-flip-vertical hidden"><i class="fa fa-arrows-v"></i></button>
+                <button type="button" class="btn btn-reset hidden"><i class="fa fa-refresh"> Làm lại</i></button>
+                <button type="button" class="btn btn-success btn-download hidden"><i class="fa fa-download"></i> Tải xuống</button>
             </div>
             <div class="frame-change">
                 <h3>Chọn khung:</h3>
@@ -51,7 +53,6 @@
             <div class="guide">
                 <h3>Hướng dẫn:</h3>
                 <p>Vui lòng đọc kỹ hướng dẫn sử dụng trước khi dùng</p>
-                <p class="text-danger">* Chưa hỗ trợ các thiết bị di động hoặc màn hình nhỏ.</p>
             </div>
         </div>
     </div>

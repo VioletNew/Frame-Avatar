@@ -14,16 +14,29 @@ body {
     background: #ffffff;
     margin-top: 25px;
     box-shadow: 10px 10px 5px #707070;
-    width: 950px;
 }
 
 .main-content .col-md-8, .main-content .col-md-4 {
     padding: 15px;
 }
 
+.dyn-box {
+    width: 100%;
+    position: relative;
+}
+
+.dyn-box:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
 .crop-image {
-    width: 620px;
-    height: 620px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border: 1px solid #000000;
     overflow: hidden;
 }
@@ -33,8 +46,11 @@ body {
 }
 
 .frame-image {
-    width: 620px;
-    height: 620px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-image: none;
     background-repeat: no-repeat;
     background-position: center center;
@@ -52,7 +68,7 @@ body {
 }
 
 .btn-rotate-left, .btn-rotate-right, .btn-zoom-in, .btn-zoom-out, .btn-flip-horizon, .btn-flip-vertical {
-    width: 48.5%;
+    width: 49%;
 }
 
 h3 {

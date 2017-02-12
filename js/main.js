@@ -10,9 +10,6 @@ $(document).ready(function () {
     var output_size = 620; // px
     var output_name = 'avatar.png';
 
-    $('.btn').addClass('hidden');
-    $('.btn-upload').removeClass('hidden');
-
     $.post( "ajax.php", function( data ) {
         if( ! data ) {
             alert('Lấy dữ liệu thất bại. Vui lòng tải lại trang.');
@@ -37,7 +34,7 @@ $(document).ready(function () {
         cropBoxMovable: false,
         cropBoxResizable: false,
         autoCrop: false,
-        minCropBoxWidth: output_size,
+        minCropBoxWidth: $('.dyn-box').outerWidth(),
         toggleDragModeOnDblclick: false,
     });
 
