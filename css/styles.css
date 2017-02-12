@@ -12,12 +12,12 @@ body {
 
 .main-content {
     background: #ffffff;
-    margin-top: 25px;
+    margin-top: 6px;
     box-shadow: 10px 10px 5px #707070;
 }
 
 .main-content .left-block, .main-content .right-block {
-    padding: 15px;
+    padding: 18px;
 }
 
 .dyn-box {
@@ -77,7 +77,7 @@ h3 {
 }
 
 .footer {
-    padding-top: 30px;
+    padding-top: 14px;
 }
 
 .footer p {
