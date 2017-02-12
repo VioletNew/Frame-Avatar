@@ -1,0 +1,70 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    background: #eeeeee;
+    font-size: 16px;
+}
+
+.main-content {
+    background: #ffffff;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px #707070;
+    width: 950px;
+}
+
+.main-content .col-md-8, .main-content .col-md-4 {
+    padding: 15px;
+}
+
+.crop-image {
+    width: 620px;
+    height: 620px;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+
+.crop-image .cropper-move {
+    z-index: 2;
+}
+
+.frame-image {
+    width: 620px;
+    height: 620px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+}
+
+.btn {
+    margin-bottom: 5px;
+}
+
+.btn-upload, .btn-reset, .btn-download {
+    width:100%;
+}
+
+.btn-rotate-left, .btn-rotate-right, .btn-zoom-in, .btn-zoom-out, .btn-flip-horizon, .btn-flip-vertical {
+    width: 48.5%;
+}
+
+h3 {
+    font-weight: 700;
+    color: blue;
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: bold;
+}
